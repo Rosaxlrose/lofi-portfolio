@@ -123,6 +123,13 @@ export default {
 				'slide-up': {
 					'0%': { transform: 'translateY(20px)', opacity: '0' },
 					'100%': { transform: 'translateY(0)', opacity: '1' }
+				},
+				'glitch': {
+					'0%, 100%': { transform: 'translate(0)' },
+					'20%': { transform: 'translate(-2px, 2px)' },
+					'40%': { transform: 'translate(-2px, -2px)' },
+					'60%': { transform: 'translate(2px, 2px)' },
+					'80%': { transform: 'translate(2px, -2px)' }
 				}
 			},
 			animation: {
@@ -133,11 +140,13 @@ export default {
 				'grain': 'grain 8s steps(10) infinite',
 				'wave': 'wave 2.5s ease infinite',
 				'blur-in': 'blur-in 1.5s ease-out forwards',
-				'slide-up': 'slide-up 0.6s ease-out forwards'
+				'slide-up': 'slide-up 0.6s ease-out forwards',
+				'glitch': 'glitch 0.5s ease-in-out infinite'
 			},
 			fontFamily: {
 				'lofi': ['Space Mono', 'monospace'],
-				'heading': ['Playfair Display', 'serif']
+				'heading': ['Playfair Display', 'serif'],
+				'pixel': ['"Press Start 2P"', 'cursive']
 			},
 			backdropBlur: {
 				xs: '2px',

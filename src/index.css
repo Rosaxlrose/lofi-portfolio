@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -86,6 +87,13 @@
   animation: grain 8s steps(10) infinite;
 }
 
+/* Pixelated effect */
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
 /* Customized scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -116,10 +124,15 @@
   }
 
   .lofi-button {
-    @apply bg-lofi-purple/80 hover:bg-lofi-purple text-white font-lofi px-5 py-2 rounded-md 
+    @apply bg-lofi-purple/80 hover:bg-lofi-purple text-white font-pixel px-5 py-2 rounded-md 
            transition-all duration-300 hover:shadow-lg hover:shadow-lofi-purple/20
            focus:outline-none focus:ring-2 focus:ring-lofi-purple/50 focus:ring-offset-2 
            focus:ring-offset-lofi-dark;
+  }
+
+  .pixel-border {
+    @apply border-2 border-white/30 rounded-none;
+    box-shadow: 4px 4px 0px 0px rgba(155, 135, 245, 0.3);
   }
 
   .floating {
@@ -136,5 +149,10 @@
   
   .delayed-3 {
     --delay: 600ms;
+  }
+
+  .project-card {
+    @apply backdrop-blur-md bg-white/10 rounded-none border-2 border-white/20 p-4 transition-all duration-300
+           hover:border-lofi-purple/50 hover:shadow-lg hover:shadow-lofi-purple/20;
   }
 }

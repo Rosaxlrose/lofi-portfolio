@@ -12,7 +12,7 @@ const LofiCard = ({ children, className, delay = 0 }: LofiCardProps) => {
   return (
     <div 
       className={cn(
-        "lofi-card blur-load animate-blur-in",
+        "lofi-card blur-load animate-blur-in hover:shadow-md hover:shadow-lofi-purple/10 transition-all",
         className
       )}
       style={{ animationDelay: `${delay}ms` }}

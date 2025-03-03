@@ -1,14 +1,14 @@
 
 import React from 'react';
-import { Music, Github } from 'lucide-react';
+import { Monitor, Github } from 'lucide-react';
 
 const LofiHeader = () => {
   return (
     <header className="w-full py-6 px-4 md:px-8 flex justify-between items-center z-10 relative">
       <div className="flex items-center gap-2">
-        <Music className="text-lofi-purple animate-pulse-slow" size={24} />
+        <Monitor className="text-lofi-purple animate-pulse-slow" size={24} />
         <h1 className="text-xl md:text-2xl font-heading text-lofi-beige tracking-wide opacity-90">
-          lo-fi <span className="text-lofi-purple">dreamscape</span>
+          pixel <span className="text-lofi-purple">portfolio</span>
         </h1>
       </div>
       
